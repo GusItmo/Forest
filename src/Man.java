@@ -7,16 +7,20 @@ public class Man {
 
         boolean success = (Math.random() > 0.5D);
         ShootResult result = new ShootResult(shootTarget, success);
+        System.out.println("ПФФ!!!(Выстрел)");
 
 
         if (result.isSuccess()) {
-            System.out.println(shootTarget.getClass().getName() + " убит");
+            shootTarget.setAlive(false);
+            System.out.println(shootTarget.getGeneralName() + " убит");
         } else {
-            System.out.println("Вы промахнулись!");
+            System.out.println("Вы промахнулись!" + shootTarget.getGeneralName() + " убежал.");
         }
 
         return result;
     }
+
+
 
     public void setName(String name) {
         this.name = name;

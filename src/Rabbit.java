@@ -1,11 +1,13 @@
 public class Rabbit extends Animal {
-    public String name = "Кролик";
+
+
+    public Rabbit(int age, int weight, int speed) {
+        super(age, weight, speed, "Кролик", "Кролика");
+    }
+
     void eatGrass(Grass grass) {
 
         setWeight(getWeight() + 1);
     }
 
-    public String getName() {
-        return name;
     }
-}
