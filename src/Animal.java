@@ -58,7 +58,7 @@ public abstract class Animal {
 
         animal2.setAlive(false);
         animal1.setWeight(getWeight() + 2);
-        System.out.println(animal1.getClass().getName() + " съел " + animal2.nameInRodP + ".");
+        System.out.println(animal1.getGeneralName() + " съел " + animal2.getNameInRodP() + ".");
 
     }
 
