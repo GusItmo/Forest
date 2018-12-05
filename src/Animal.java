@@ -7,12 +7,13 @@ public abstract class Animal {
     private final String generalName;
     private final String nameInRodP;
 
-    public Animal(int age, int weight, int speed, String generalName, String nameInRodP) {
+    public Animal(int age, int weight, int speed, String generalName, String nameInRodP, boolean isAlive) {
         this.age = age;
         this.weight = weight;
         this.speed = speed;
         this.generalName = generalName;
         this.nameInRodP = nameInRodP;
+        this.isAlive = isAlive;
     }
 
     public static void main(String[] args) {
